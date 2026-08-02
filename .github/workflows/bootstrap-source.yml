@@ -3,6 +3,8 @@ name: Bootstrap source tree
 on:
   push:
     branches: [main]
+  issues:
+    types: [opened]
   workflow_dispatch:
 
 permissions:
