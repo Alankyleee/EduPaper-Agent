@@ -230,7 +230,7 @@ python scripts/make_sample_pdf.py
 python eval/run_eval.py
 ```
 
-基础 eval 仅用于验证管线。把成功率写进简历前，应扩展到不少于 20 条人工标注用例，并人工核验引用是否真的支持答案。详见 [`docs/eval.md`](docs/eval.md)。
+基础 eval 仅用于验证管线。建议扩展到不少于 20 条人工标注用例，并人工核验引用是否真正支持答案。详见 [`docs/eval.md`](docs/eval.md)。
 
 ## 设计说明
 
@@ -267,14 +267,6 @@ python eval/run_eval.py
 - [ ] 加入 SQLite 长期研究笔记和主题级 memory。
 - [ ] 加入 Prompt Injection 测试、成本上限和模型 fallback。
 - [ ] 用 LangSmith 或 OpenTelemetry 展示节点级 latency 与 token 消耗。
-
-## 简历表达建议
-
-在完成真实测试并记录指标后，可以写成：
-
-> 基于 LangGraph 构建教育论文研读 Agent，设计本地 Chroma 检索、证据质量判断、arXiv 补充检索、答案生成与引用核验节点；实现 PyMuPDF 原生解析与 MinerU/PaddleOCR OCR 降级策略，保留页码、标题、表格和公式等结构化证据。通过 FastAPI 提供解析器可选的上传、文档管理和三类研究问答接口，并保存节点 trace 供失败复盘；构建人工标注 eval case，评估检索相关性、引用准确率、幻觉率、延迟与成本。
-
-不要填写尚未实测的成功率、成本下降比例或准确率。
 
 ## 致谢
 
