@@ -1,0 +1,23 @@
+[
+  {
+    "id": "local-method-summary",
+    "query": "概括研究问题、方法、样本、主要发现和局限。",
+    "mode": "review",
+    "allow_arxiv_search": false,
+    "checks": ["has_citations", "no_empty_answer"]
+  },
+  {
+    "id": "missing-number",
+    "query": "文档中教师样本量的精确数字是多少？",
+    "mode": "qa",
+    "allow_arxiv_search": false,
+    "checks": ["no_empty_answer"]
+  },
+  {
+    "id": "open-research",
+    "query": "检索 agentic RAG 在教育研究中的潜在应用。",
+    "mode": "review",
+    "allow_arxiv_search": true,
+    "checks": ["no_empty_answer"]
+  }
+]
