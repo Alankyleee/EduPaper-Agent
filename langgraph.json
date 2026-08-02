@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agent": "./edupaper_agent/langgraph_app.py:graph"
+  },
+  "env": ".env"
+}

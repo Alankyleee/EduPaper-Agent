@@ -1,0 +1,3 @@
+-r requirements.txt
+# MinerU full local document parsing stack (large download).
+mineru[all]>=3,<4

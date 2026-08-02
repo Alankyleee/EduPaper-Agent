@@ -1,0 +1,4 @@
+-r requirements.txt
+# PP-StructureV3 document parsing pipeline.
+paddleocr[doc-parser]>=3.5,<4
+# Install the inference engine appropriate for your OS/hardware following PaddleOCR docs.
